@@ -1,0 +1,31 @@
+
+
+# Twoj konfig
+#...
+
+# PK_Clock_MAX7219
+sensor 1:
+  platform: mqtt
+  name: "Temperatura"
+  state_topic: "sensor/temperature1"
+  qos: 0
+  unit_of_measurement: "ºC"
+  device_class: temperature
+
+sensor 2:
+  platform: mqtt
+  name: "Wilgotność"
+  state_topic: "sensor/humidity1"
+  qos: 0
+  unit_of_measurement: "%"
+  device_class: humidity
+  
+sensor 3:
+  platform: mqtt
+  name: "Ciśnienie"
+  state_topic: "sensor/presure1"
+  qos: 0
+  unit_of_measurement: "hPa"
+  device_class: pressure
+  
+  #...
